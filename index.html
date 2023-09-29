@@ -1,18 +1,17 @@
 <html>
-
 <head>
   <title>LAC Digital Initiatives</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/main.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 
 <body>
-
   <div class="wrapper">
     <div class="lyt_card">
       <div class="card">
-
         <div class="header">
           <div class="sec_title">
             <div class="gr_title">
@@ -26,7 +25,7 @@
             <div class="gr_cui">
               <div class="title">CUI:</div>
               <div class="cont_input">
-                <input type="text" />
+                <input type="text" class="CUI" />
               </div>
             </div>
           </div>
@@ -37,24 +36,32 @@
             <div class="cont_check">
               <div class="lbl">Laboratorio</div>
               <div class="cta">
-                <div class="checkbox-wrapper-26">
-                  <input type="checkbox" id="_checkbox-1">
-                  <label for="_checkbox-1">
-                    <div class="tick_mark"></div>
-                  </label>
+                <div class="rd_btn">
+                  <div class="checkbox-wrapper-26">
+                    <input type="checkbox" id="_checkbox-1" class="LAB" />
+                    <label for="_checkbox-1">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="cnt1_1">
             <div class="cont_check">
-              <div class="lbl">Prueva HIV</div>
+              <div class="lbl">Prueba VIH</div>
               <div class="cta">
-                <div class="checkbox-wrapper-26">
-                  <input type="checkbox" id="_checkbox-1a">
-                  <label for="_checkbox-1a">
-                    <div class="tick_mark"></div>
-                  </label>
+                <div class="rd_btn">
+                  <div class="checkbox-wrapper-26">
+                    <input
+                      type="checkbox"
+                      id="_checkbox-1a"
+                      class="LAB_HIV"
+                    />
+                    <label for="_checkbox-1a">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -66,22 +73,39 @@
             <div class="cont_check">
               <div class="lbl">ASP</div>
               <div class="cta">
-                <div class="checkbox-wrapper-26">
-                  <input type="checkbox" id="_checkbox-2">
-                  <label for="_checkbox-2">
-                    <div class="tick_mark"></div>
-                  </label>
+                <div class="rd_btn">
+                  <div class="checkbox-wrapper-26">
+                    <input type="checkbox" id="_checkbox-2" class="ASP" />
+                    <label for="_checkbox-2">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="cnt2_1">
             <div class="cont_check">
-              <div class="lbl">Prueva HIV</div>
+              <div class="lbl">Prueba VIH</div>
               <div class="cta">
                 <div class="checkbox-wrapper-26">
-                  <input type="checkbox" id="_checkbox-2a">
+                  <input type="checkbox" id="_checkbox-2a" class="ASP_HIV" />
                   <label for="_checkbox-2a">
+                    <div class="tick_mark"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="cont_check" style="margin-top: 16px">
+              <div class="lbl">Autoprueba</div>
+              <div class="cta">
+                <div class="checkbox-wrapper-26">
+                  <input
+                    type="checkbox"
+                    id="_checkbox-3a"
+                    class="ASP_AUTOTEST"
+                  />
+                  <label for="_checkbox-3a">
                     <div class="tick_mark"></div>
                   </label>
                 </div>
@@ -93,10 +117,10 @@
         <div class="cnt_3">
           <div class="cnt3_hd">
             <div class="cont_check">
-              <div class="lbl">Autoprueba</div>
+              <div class="lbl">PASMO</div>
               <div class="cta">
                 <div class="checkbox-wrapper-26">
-                  <input type="checkbox" id="_checkbox-3">
+                  <input type="checkbox" id="_checkbox-3" class="PASMO" />
                   <label for="_checkbox-3">
                     <div class="tick_mark"></div>
                   </label>
@@ -106,10 +130,31 @@
           </div>
           <div class="cnt3_1">
             <div class="cont_check">
-              <div class="lbl">PASMO</div>
+              <div class="lbl">Prueba VIH</div>
+              <div class="cta">
+                <div class="rd_btn">
+                  <div class="checkbox-wrapper-26">
+                    <input
+                      type="checkbox"
+                      id="_checkbox-1a"
+                      class="PASMO_HIV"
+                    />
+                    <label for="_checkbox-1a">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cont_check" style="margin-top:16px;">
+              <div class="lbl">Autoprueba</div>
               <div class="cta">
                 <div class="checkbox-wrapper-26">
-                  <input type="checkbox" id="_checkbox-3a">
+                  <input
+                    type="checkbox"
+                    id="_checkbox-3a"
+                    class="PASMO_AUTOTEST"
+                  />
                   <label for="_checkbox-3a">
                     <div class="tick_mark"></div>
                   </label>
@@ -122,36 +167,34 @@
         <div class="sec_cupon">
           <div class="gr_cupon">
             <div class="cont_input">
-              <input type="text" />
+              <input class="cupon" type="text" value="" />
             </div>
             <div class="title">Correlativo del cupón</div>
           </div>
         </div>
         <div class="sec_ngos"></div>
-        <div class="sec_date">
-          <div class="gr_date">
+        <div class="sec_date" style="width: 90%; justify-self: flex-end">
+          <div class="gr_date" style="width: 100%">
             <div class="cont_input">
-              <input type="text" />
+              <input type="text" class="date" />
             </div>
             <div class="title">Fecha estimada de visita</div>
           </div>
         </div>
       </div>
-      
     </div>
     <div class="lgsngos">
       <div class="lg1">
-        <img src="/images/pepfar.jpg" />
+        <img src="./images/pepfar.jpg" />
       </div>
       <div class="lg2">
-        <img src="/images/usaid.jpg" />
+        <img src="./images/usaid.jpg" />
       </div>
       <div class="lg3">
-        <img src="/images/pasmo.jpg" />
+        <img src="./images/pasmo.jpg" />
       </div>
     </div>
   </div>
-
 </body>
-
 </html>
+
