@@ -726,8 +726,7 @@ body {
 
 body {
   background-color: #FFFFFF;
-  padding: 16px;
-  margin: 1% 0 0;
+  margin: 0;
 }
 body .wrapper {
   position: relative;
@@ -746,9 +745,7 @@ body .wrapper {
     width: 100%;
     height: auto;
     max-width: 800px;
-    max-height: 492.51px;
-    margin: 0 auto;
-    padding: 16px;
+    margin: 0;
   }
 }
 

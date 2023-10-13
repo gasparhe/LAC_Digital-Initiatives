@@ -30,8 +30,7 @@ body {
 
 body {
   background-color: $clr2;
-  padding: 16px;
-  margin: 8%  0 0;
+  margin: 0;
 
   .wrapper {
     position: relative;
@@ -47,35 +46,8 @@ body {
     @include brk711 {
       width: 100%;
       height: auto;
-      max-width: 1280px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 16px;
     }
   }
-
-  body {
-    background-color: $clr2;
-    padding: 16px;
-    margin: 1%  0 0;
-
-    .wrapper {
-      position: relative;
-
-      @include brk320 {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        border: none;
-        padding: 0;
-      }
-
-      @include brk711 {
-        width: 100%;
-        height: auto;
-        max-width: 800px;
-        max-height: 492.51px;
-        margin: 0 auto;
-        padding: 16px;
-      }
-    }
-  }
+}

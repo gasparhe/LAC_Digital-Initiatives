@@ -18,7 +18,7 @@ $(document).ready(function () {
     };
 
 
-    var check = getUrlParameter('check').split(',');
+    var check = getUrlParameter('check')?.split(',');
     var cui = getUrlParameter('cui');
     var cupon = getUrlParameter('cupon');
     var date = getUrlParameter('date');
@@ -27,15 +27,18 @@ $(document).ready(function () {
     $('.cupon').val(cupon);
     $('.fecha').val(date);
 
-    for (let i = 0; i < check.length; i++) {
-        // checks=LAB,ASP,AUTOTEST,AUTOTEST_PASMO,ASP_HIV,LAB_HIV
-        if (check[i] === 'LAB') $('.lab').prop('checked', true);
-        if (check[i] === 'LAB_HIV') $('.lab_hiv').prop('checked', true);
-        if (check[i] === 'ASP') $('.asp').prop('checked', true);
-        if (check[i] === 'ASP_HIV') $('.asp_hiv').prop('checked', true);
-        if (check[i] === 'AUTOTEST') $('.autotest').prop('checked', true);
-        if (check[i] === 'AUTOTEST_PASMO') $('.autotest_pasmo').prop('checked', true);
-    }
+    check.forEach(element => {
+        $(`.${element}`).prop('checked', true);
+    });
+    // for (let i = 0; i < check.length; i++) {
+    //     // checks=LAB,ASP,AUTOTEST,AUTOTEST_PASMO,ASP_HIV,LAB_HIV
+    //     if (check[i] === 'LAB') $('.lab').prop('checked', true);
+    //     if (check[i] === 'LAB_HIV') $('.lab_hiv').prop('checked', true);
+    //     if (check[i] === 'ASP') $('.asp').prop('checked', true);
+    //     if (check[i] === 'ASP_HIV') $('.asp_hiv').prop('checked', true);
+    //     if (check[i] === 'AUTOTEST') $('.autotest').prop('checked', true);
+    //     if (check[i] === 'AUTOTEST_PASMO') $('.autotest_pasmo').prop('checked', true);
+    // }
 
     // $('#level').attr('src', '/gamification/images/level/' + level + '.png')
 
